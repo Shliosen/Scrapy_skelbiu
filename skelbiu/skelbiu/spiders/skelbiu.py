@@ -14,5 +14,5 @@ class skelbimas(scrapy.Spider):
             filename= "skelbimai-%s.html" % page
             with open (filename, "wb") as f:
                 f.write(response.body)
-        self.log("Saved file %s" % filename)
+            self.log("Saved file %s" % filename)
 
