@@ -9,7 +9,7 @@ class skelbimas(scrapy.Spider):
            'http://skelbiu.lt/skelbimai/paslaugos-darbas/darbo-paieska/it-specialistai/2',
         ]
  
-     def parse(self, response):
+    def parse(self, response):
         page=response.url.split("/")[-2]
         filename= "skelbimai-%s.html" % page
         with open (filename, "wb") as f:
