@@ -13,6 +13,6 @@ class skelbimas(scrapy.Spider):
             page=response.url.split("/")[-2]
             filename= "skelbimai-%s.html" % page
             with open (filename, "wb") as f:
-            f.write(response.body)
+                f.write(response.body)
         self.log("Saved file %s" % filename)
 
