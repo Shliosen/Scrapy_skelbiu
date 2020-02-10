@@ -10,7 +10,8 @@ class skelbimas(scrapy.Spider):
            'https://www.skelbiu.lt/skelbimai/paslaugos-darbas/darbo-paieska/it-specialistai/2/',
         ]
         for url in urls:
-            yield scrapy.Request(url=url, callback=self.parse)
+            yield scrapy.Request(url=url, callback=self.parse) 
+            
     def parse(self, response):
         page=response.url.split("/")[-2]
         filename= 'skelbimai-%s.html' % page
