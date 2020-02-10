@@ -4,7 +4,7 @@ import scrapy
 class skelbimas(scrapy.Spider):
     name = 'sk'
 
-    def start_request(self):
+    def start_t(self):
         urls = [
            'http://skelbiu.lt/skelbimai/paslaugos-darbas/darbo-paieska/it-specialistai/1',
            'http://skelbiu.lt/skelbimai/paslaugos-darbas/darbo-paieska/it-specialistai/2',
