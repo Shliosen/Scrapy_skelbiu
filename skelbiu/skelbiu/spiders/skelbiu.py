@@ -8,7 +8,7 @@ class skelbimas(scrapy.Spider):
            'http://skelbiu.lt/skelbimai/paslaugos-darbas/darbo-paieska/it-specialistai/1',
            'http://skelbiu.lt/skelbimai/paslaugos-darbas/darbo-paieska/it-specialistai/2',
         ]
-        
+       
 
     def parse(self, response):
         page=response.url.split("/")[-2]
