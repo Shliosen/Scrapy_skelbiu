@@ -7,7 +7,7 @@ class skelbimas(scrapy.Spider):
     def start_request(self):
         urls = [
            'https://skelbiu.lt/skelbimai/paslaugos-darbas/darbo-paieska/it-specialistai/1/',
-           'https://www.skelbiu.lt/skelbimai/paslaugos-darbas/darbo-paieska/it-specialistai/2/',
+           'https://skelbiu.lt/skelbimai/paslaugos-darbas/darbo-paieska/it-specialistai/2/',
         ]
         for url in urls:
             yield scrapy.Request(url=url, callback=self.parse) 
