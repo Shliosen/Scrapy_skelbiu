@@ -10,6 +10,6 @@ class skelbimas(scrapy.Spider):
         ]
  
     def parse(self, response):
-        for data in response.css('d')
+        for data in response.css('div.q')
             
 
