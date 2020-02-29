@@ -10,6 +10,6 @@ class skelbimas(scrapy.Spider):
         ]
  
     def parse(self, response):
-        for
+        for 
             
 
