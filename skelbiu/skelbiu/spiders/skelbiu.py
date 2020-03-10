@@ -9,11 +9,7 @@ class skelbimas(scrapy.Spider):
            'http://skelbiu.lt/skelbimai/paslaugos-darbas/darbo-paieska/it-specialistai/2',
         ]
  
-    def parse(self, response):
-        for data in response.css('.js-cfuser-link'):
-            yield{
-
-            }
+    
 
             
 
