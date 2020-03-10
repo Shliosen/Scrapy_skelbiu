@@ -1,5 +1,5 @@
 import scrapy
-#import urllib.request
+import urllib.request
 
 class skelbimas(scrapy.Spider):
     name = 'sk'
